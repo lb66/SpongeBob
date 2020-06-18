@@ -318,8 +318,12 @@ const start = () => {
 const stop = () => {
   window.clearInterval(id)
 }
+start()
 pause.onclick = stop
-play.onclick = start
+play.onclick = () => {
+  stop()
+  start()
+}
 slow.onclick = () => {
   stop()
   time = 100
@@ -335,5 +339,3 @@ fast.onclick = () => {
   time = 0
   start()
 }
-
-start()

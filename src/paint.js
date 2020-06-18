@@ -300,7 +300,7 @@ body{
 
 const words = document.querySelector('#words')
 const type = document.querySelector('#type')
-let n = 5000
+let n = 1
 const run = function () {
   n += 1
   if (n > string.length) {

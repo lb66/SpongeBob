@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#buttons {
+  position: fixed;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+#buttons>button {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+#type {
+  display: none;
+}
+
+#words {
+  position: fixed;
+  height: 30%;
+  width: 100%;
+  overflow-y: scroll;
+  z-index: 99;
+  background-color: white;
+}
+
+/* 隐藏滚动条
+#words::-webkit-scrollbar {
+  display: none;
+} */
+#html {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 75vh;
+}
+
+@media screen and (max-width: 600px) {
+  #html {
+    transform: scale(0.7);
+  }
+
+  #words {
+    height: 40%;
+  }
+}
+
+/*# sourceMappingURL=https:lb66.github.io/paint-1/dist/paint.7adce8e6.css.map */

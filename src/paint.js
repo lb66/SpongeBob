@@ -311,7 +311,7 @@ const run = function () {
   type.innerHTML = string.substr(0, n)
   words.scrollTop = 99999 //每次都滚到底
 }
-let time = 50
+let time = 30
 const start = () => {
   id = setInterval(run, time)
 }
@@ -324,11 +324,6 @@ play.onclick = () => {
   stop()
   start()
 }
-slow.onclick = () => {
-  stop()
-  time = 100
-  start()
-}
 normal.onclick = () => {
   stop()
   time = 30
@@ -336,6 +331,14 @@ normal.onclick = () => {
 }
 fast.onclick = () => {
   stop()
-  time = 0
+  time = 1
+  start()
+}
+end.onclick = () => {
+  if (confirm('需要直接到最后吗？') == false) {
+    return false;
+  }
+  stop()
+  n = 5435
   start()
 }

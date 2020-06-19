@@ -136,7 +136,7 @@ var run = function run() {
   words.scrollTop = 99999; //每次都滚到底
 };
 
-var time = 50;
+var time = 30;
 
 var start = function start() {
   id = setInterval(run, time);
@@ -154,12 +154,6 @@ play.onclick = function () {
   start();
 };
 
-slow.onclick = function () {
-  stop();
-  time = 100;
-  start();
-};
-
 normal.onclick = function () {
   stop();
   time = 30;
@@ -168,8 +162,18 @@ normal.onclick = function () {
 
 fast.onclick = function () {
   stop();
-  time = 0;
+  time = 1;
+  start();
+};
+
+end.onclick = function () {
+  if (confirm('需要直接到最后吗？') == false) {
+    return false;
+  }
+
+  stop();
+  n = 5435;
   start();
 };
 },{}]},{},["g61M"], null)
-//# sourceMappingURL=https:lb66.github.io/paint-1/dist/paint.cf22a25f.js.map
+//# sourceMappingURL=https://lb66.github.io/paint-1/dist/paint.7d51c66d.js.map

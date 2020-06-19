@@ -339,6 +339,6 @@ end.onclick = () => {
     return false;
   }
   stop()
-  n = 5435
+  n = 5433
   start()
 }

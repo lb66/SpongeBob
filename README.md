@@ -1,0 +1,2 @@
+# SpongeBob
+这是一个基于原生JavaScript和CSS3完成的项目，利用JS动态写入HTML和CSS，实现从零到一画出海绵宝宝的过程。
